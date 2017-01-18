@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TUDelft Library</string>
+    <string name="times_title">Opening Times</string>
+    <string name="days">Mon - Sun\n8AM - 12AM</string>
+
+    <string name="address_title">Address</string>
+    <string name="address_body">Prometheusplein 1\n2628 ZC Delft</string>
+
+    <string name="wifi_title">WiFi</string>
+    <string name="wifi_body">Eduroam and limited public access</string>
+</resources>
+

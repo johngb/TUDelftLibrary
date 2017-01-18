@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.johngb.tudelftlibrary.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/bg_main"
+        />
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorDarkBox"
+        android:padding="@dimen/activity_horizontal_margin"
+        >
+
+        <!-- Opening Times-->
+        <RelativeLayout
+            android:id="@+id/grp_opening_times"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Opening Times Icon -->
+            <ImageView
+                android:id="@+id/ic_opening_times"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:src="@drawable/ic_schedule_bl"
+                android:tint="@color/textHeader"
+                android:paddingStart="@dimen/icon_padding_start"
+                android:paddingEnd="@dimen/icon_padding_end"
+                android:paddingRight="@dimen/icon_padding_end"
+                />
+
+            <!--Label Opening Times-->
+            <TextView
+                android:id="@+id/header_opening_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/times_title"
+                android:textColor="@color/textHeader"
+                android:textSize="@dimen/text_header_size"
+                android:layout_toEndOf="@id/ic_opening_times"
+                android:layout_toRightOf="@id/ic_opening_times"
+                android:paddingTop="@dimen/padding_above_headers"
+                android:layout_alignTop="@id/ic_opening_times"
+                />
+
+            <!--Text Opening Times-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/header_opening_times"
+                android:textColor="@color/textBody"
+                android:text="@string/days"
+                android:textSize="@dimen/text_body_size"
+                android:layout_below="@id/header_opening_times"
+                />
+
+        </RelativeLayout>
+
+        <!-- Address -->
+        <RelativeLayout
+            android:id="@+id/grp_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/grp_opening_times"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            >
+
+            <!-- Address Icon -->
+            <ImageView
+                android:id="@+id/ic_address"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:src="@drawable/ic_location_bl"
+                android:tint="@color/textHeader"
+                android:paddingStart="@dimen/icon_padding_start"
+                android:paddingEnd="@dimen/icon_padding_end"
+                android:paddingRight="@dimen/icon_padding_end"
+                />
+
+            <!--Label Address-->
+            <TextView
+                android:id="@+id/header_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address_title"
+                android:textColor="@color/textHeader"
+                android:textSize="@dimen/text_header_size"
+                android:layout_toEndOf="@id/ic_address"
+                android:layout_toRightOf="@id/ic_address"
+                android:paddingTop="@dimen/padding_above_headers"
+                android:layout_alignTop="@id/ic_address"
+                />
+
+            <!--Text Address -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/header_address"
+                android:textColor="@color/textBody"
+                android:text="@string/address_body"
+                android:textSize="@dimen/text_body_size"
+                android:layout_below="@id/header_address"
+                />
+
+        </RelativeLayout>
+
+        <!-- WiFi -->
+        <RelativeLayout
+            android:id="@+id/grp_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/grp_address"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            >
+
+            <!-- Wifi Icon -->
+            <ImageView
+                android:id="@+id/ic_wifi"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:src="@drawable/ic_wifi_bl"
+                android:tint="@color/textHeader"
+                android:paddingStart="@dimen/icon_padding_start"
+                android:paddingEnd="@dimen/icon_padding_end"
+                android:paddingRight="@dimen/icon_padding_end"
+                />
+
+            <!--Label Wifi-->
+            <TextView
+                android:id="@+id/header_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi_title"
+                android:textColor="@color/textHeader"
+                android:textSize="@dimen/text_header_size"
+                android:layout_toEndOf="@id/ic_wifi"
+                android:layout_toRightOf="@id/ic_wifi"
+                android:paddingTop="@dimen/padding_above_headers"
+                android:layout_alignTop="@id/ic_wifi"
+                />
+
+            <!--Text Address -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/header_wifi"
+                android:textColor="@color/textBody"
+                android:text="@string/wifi_body"
+                android:textSize="@dimen/text_body_size"
+                android:layout_below="@id/header_wifi"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
