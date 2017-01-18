@@ -1,11 +1,17 @@
 <resources>
     <string name="app_name">TUDelft Library</string>
-    <string name="times_title">Opening Times</string>
-    <string name="days">Mon - Sun\n8AM - 12AM</string>
 
+    <string name="img_descr_bg">Image of TU Delft library with a stork in the foreground</string>
+
+    <string name="times_icon_descr">Schedule icon</string>
+    <string name="times_title">Opening Times</string>
+    <string name="times_body">Mon - Sun\n8AM - 12AM</string>
+
+    <string name="address_icon_descr">Map marker icon</string>
     <string name="address_title">Address</string>
     <string name="address_body">Prometheusplein 1\n2628 ZC Delft</string>
 
+    <string name="wifi_icon_descr">WiFi icon</string>
     <string name="wifi_title">WiFi</string>
     <string name="wifi_body">Eduroam and limited public access</string>
 </resources>

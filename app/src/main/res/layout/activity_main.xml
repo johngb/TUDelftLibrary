@@ -7,6 +7,7 @@
     tools:context="com.johngb.tudelftlibrary.MainActivity">
 
     <ImageView
+        android:contentDescription="@string/img_descr_bg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
@@ -23,7 +24,7 @@
         android:padding="@dimen/activity_horizontal_margin"
         >
 
-        <!-- Opening Times-->
+        <!-- Opening Times -->
         <RelativeLayout
             android:id="@+id/grp_opening_times"
             android:layout_width="match_parent"
@@ -31,12 +32,14 @@
 
             <!-- Opening Times Icon -->
             <ImageView
+                android:contentDescription="@string/times_icon_descr"
                 android:id="@+id/ic_opening_times"
                 android:layout_width="@dimen/icon_size"
                 android:layout_height="@dimen/icon_size"
                 android:src="@drawable/ic_schedule_bl"
                 android:tint="@color/textHeader"
                 android:paddingStart="@dimen/icon_padding_start"
+                android:paddingLeft="@dimen/icon_padding_start"
                 android:paddingEnd="@dimen/icon_padding_end"
                 android:paddingRight="@dimen/icon_padding_end"
                 />
@@ -60,8 +63,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@id/header_opening_times"
+                android:layout_alignLeft="@id/header_opening_times"
                 android:textColor="@color/textBody"
-                android:text="@string/days"
+                android:text="@string/times_body"
                 android:textSize="@dimen/text_body_size"
                 android:layout_below="@id/header_opening_times"
                 />
@@ -79,12 +83,14 @@
 
             <!-- Address Icon -->
             <ImageView
+                android:contentDescription="@string/address_icon_descr"
                 android:id="@+id/ic_address"
                 android:layout_width="@dimen/icon_size"
                 android:layout_height="@dimen/icon_size"
                 android:src="@drawable/ic_location_bl"
                 android:tint="@color/textHeader"
                 android:paddingStart="@dimen/icon_padding_start"
+                android:paddingLeft="@dimen/icon_padding_start"
                 android:paddingEnd="@dimen/icon_padding_end"
                 android:paddingRight="@dimen/icon_padding_end"
                 />
@@ -108,6 +114,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@id/header_address"
+                android:layout_alignLeft="@id/header_address"
                 android:textColor="@color/textBody"
                 android:text="@string/address_body"
                 android:textSize="@dimen/text_body_size"
@@ -116,7 +123,7 @@
 
         </RelativeLayout>
 
-        <!-- WiFi -->
+        <!-- WiFi-->
         <RelativeLayout
             android:id="@+id/grp_wifi"
             android:layout_width="match_parent"
@@ -127,12 +134,14 @@
 
             <!-- Wifi Icon -->
             <ImageView
+                android:contentDescription="@string/wifi_icon_descr"
                 android:id="@+id/ic_wifi"
                 android:layout_width="@dimen/icon_size"
                 android:layout_height="@dimen/icon_size"
                 android:src="@drawable/ic_wifi_bl"
                 android:tint="@color/textHeader"
                 android:paddingStart="@dimen/icon_padding_start"
+                android:paddingLeft="@dimen/icon_padding_start"
                 android:paddingEnd="@dimen/icon_padding_end"
                 android:paddingRight="@dimen/icon_padding_end"
                 />
@@ -151,16 +160,17 @@
                 android:layout_alignTop="@id/ic_wifi"
                 />
 
-            <!--Text Address -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@id/header_wifi"
                 android:textColor="@color/textBody"
                 android:text="@string/wifi_body"
+                android:layout_alignLeft="@id/header_wifi"
                 android:textSize="@dimen/text_body_size"
                 android:layout_below="@id/header_wifi"
                 />
+
 
         </RelativeLayout>
 
